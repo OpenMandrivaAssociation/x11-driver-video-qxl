@@ -1,6 +1,6 @@
 Name:    x11-driver-video-qxl
-Version: 0.0.12
-Release: %mkrel 2
+Version: 0.0.13
+Release: %mkrel 1
 Summary: X.org driver for QEMU QXL paravirt video
 Group:   System/X11
 URL:     http://xorg.freedesktop.org
