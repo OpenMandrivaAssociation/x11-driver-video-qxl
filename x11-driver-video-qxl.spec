@@ -1,13 +1,11 @@
 Name:    x11-driver-video-qxl
-Version: 0.0.13
-Release: %mkrel 2
+Version: 0.0.16
+Release: 1
 Summary: X.org driver for QEMU QXL paravirt video
 Group:   System/X11
+License: MIT
 URL:     http://xorg.freedesktop.org
 Source:  http://xorg.freedesktop.org/releases/individual/driver/xf86-video-qxl-%{version}.tar.bz2
-License: MIT
-
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: x11-proto-devel
 BuildRequires: x11-server-devel
@@ -17,7 +15,7 @@ BuildRequires: x11-util-macros
 X.org driver for QEMU QXL paravirt video.
 
 %prep
-%setup -q -n xf86-video-qxl-%{version}
+%setup -qn xf86-video-qxl-%{version}
 
 %build
 %configure2_5x
@@ -26,11 +24,8 @@ X.org driver for QEMU QXL paravirt video.
 %install
 rm -rf %{buildroot}
 %makeinstall_std
-
-%clean
-rm -rf %{buildroot}
+find %{buildroot} -type f -name "*.la" -exec rm -f {} ';'
 
 %files
-%defattr(-,root,root)
-%{_libdir}/xorg/modules/drivers/qxl_drv.la
 %{_libdir}/xorg/modules/drivers/qxl_drv.so
+
