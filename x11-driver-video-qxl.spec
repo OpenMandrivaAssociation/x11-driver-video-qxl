@@ -1,8 +1,6 @@
-
-
 Name:		x11-driver-video-qxl
 Version:	0.1.0
-Release:	1
+Release:	2
 Summary:	X.org driver for Generic VESA Cards
 Group:		System/X11
 License:	MIT
@@ -13,14 +11,12 @@ BuildRequires:	pkgconfig(fontsproto)
 BuildRequires:	pkgconfig(pciaccess) >= 0.10
 BuildRequires:	pkgconfig(randrproto)
 BuildRequires:	pkgconfig(renderproto)
-BuildRequires:	pkgconfig(spice-protocol) >= 0.8.1
+BuildRequires:	pkgconfig(spice-protocol) >= 0.12.0
 BuildRequires:	pkgconfig(videoproto)
 BuildRequires:	pkgconfig(xf86dgaproto)
 BuildRequires:	pkgconfig(xorg-macros) >= 1.4
 BuildRequires:	pkgconfig(xorg-server)
 BuildRequires:	pkgconfig(xproto)
-
-Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 
 %description
 x11-driver-video-vesa is the X.org driver for Generic VESA Cards.
@@ -36,6 +32,6 @@ x11-driver-video-vesa is the X.org driver for Generic VESA Cards.
 %makeinstall_std
 
 %files
-%doc ChangeLog COPYING README
-%dir %{_libdir}/xorg/modules/drivers
+#%%doc ChangeLog COPYING README
+#%%dir %%{_libdir}/xorg/modules/drivers
 %{_libdir}/xorg/modules/drivers/qxl_drv.so
