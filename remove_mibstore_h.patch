@@ -1,0 +1,10 @@
+--- xf86-video-qxl-0.1.0/src/uxa/uxa-priv.h~	2012-09-05 16:52:20.000000000 +0000
++++ xf86-video-qxl-0.1.0/src/uxa/uxa-priv.h	2013-03-24 13:57:46.974902073 +0000
+@@ -45,7 +45,6 @@
+ #include "pixmapstr.h"
+ #include "windowstr.h"
+ #include "servermd.h"
+-#include "mibstore.h"
+ #include "colormapst.h"
+ #include "gcstruct.h"
+ #include "input.h"
