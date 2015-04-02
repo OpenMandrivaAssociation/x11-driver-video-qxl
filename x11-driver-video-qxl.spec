@@ -2,8 +2,8 @@
 
 Summary:	X.org driver for Generic VESA Cards
 Name:		x11-driver-video-qxl
-Version:	0.1.3
-Release:	3
+Version:	0.1.4
+Release:	1
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
