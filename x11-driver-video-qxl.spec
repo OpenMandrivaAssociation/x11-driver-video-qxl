@@ -27,6 +27,7 @@ BuildRequires:	pkgconfig(xf86dgaproto)
 BuildRequires:	pkgconfig(xorg-macros) >= 1.4
 BuildRequires:	pkgconfig(xorg-server)
 BuildRequires:	pkgconfig(xproto)
+BuildRequires:	pkgconfig(xfont)
 BuildRequires:	pkgconfig(libudev)
 Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 
