@@ -2,20 +2,12 @@
 
 Summary:	X.org driver for Generic VESA Cards
 Name:		x11-driver-video-qxl
-Version:	0.1.4
-Release:	4
+Version:	0.1.5
+Release:	1
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-qxl-%{version}.tar.bz2
-Patch1:		qxl-kms-disable-composite.patch
-Patch3:		no-surfaces-kms.patch
-Patch4:		0001-worst-hack-of-all-time-to-qxl-driver.patch
-Patch5:		qxl-aarch64.patch
-
-# Upstream commits
-Patch6:		0006-Use-for-system-includes.patch
-Patch7:		0007-Fix-compilation-with-newer-Xorg-versions.patch
 
 BuildRequires:	pkgconfig(fontsproto)
 BuildRequires:	pkgconfig(pciaccess) >= 0.10
