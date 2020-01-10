@@ -28,7 +28,7 @@ x11-driver-video-vesa is the X.org driver for Generic VESA Cards.
 
 %prep
 %setup -qn xf86-video-qxl-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 %configure
