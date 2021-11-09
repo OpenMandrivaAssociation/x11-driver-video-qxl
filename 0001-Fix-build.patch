@@ -1,0 +1,25 @@
+From 15a6a9f6350356392cab230c38c61ef197062964 Mon Sep 17 00:00:00 2001
+From: rpm-build <rpm-build>
+Date: Sun, 3 Oct 2021 14:06:33 +0200
+Subject: [PATCH] Fix build
+
+---
+ src/qxl_option_helpers.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/qxl_option_helpers.c b/src/qxl_option_helpers.c
+index 2aba677..9b1c5c9 100644
+--- a/src/qxl_option_helpers.c
++++ b/src/qxl_option_helpers.c
+@@ -34,7 +34,7 @@ int get_bool_option(OptionInfoPtr options, int option_index,
+     const char* value = getenv(env_name);
+ 
+     if (!value) {
+-        return options[option_index].value.bool;
++        return options[option_index].value.boolean;
+     }
+     if (strcmp(value, "0") == 0 ||
+         strcasecmp(value, "off") == 0 ||
+-- 
+2.33.0
+
