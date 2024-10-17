@@ -6,7 +6,7 @@ Version:	0.1.5
 Release:	5
 Group:		System/X11
 License:	MIT
-Url:		http://xorg.freedesktop.org
+Url:		https://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-qxl-%{version}.tar.bz2
 Patch1:		0001-worst-hack-of-all-time-to-qxl-driver.patch
 Patch2:		0002-Xspice-Use-print-instead-of-print.patch
