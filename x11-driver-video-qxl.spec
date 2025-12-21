@@ -23,6 +23,11 @@ Patch8:		0001-qxl-Include-only-the-dpms-headers-we-need.patch
 # (tv) fix build with xorg 21.*:
 Patch9:		0001-Fix-build.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(fontsproto)
 BuildRequires:	pkgconfig(pciaccess) >= 0.10
 BuildRequires:	pkgconfig(randrproto)
