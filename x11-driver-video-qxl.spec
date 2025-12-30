@@ -42,4 +42,4 @@ X11 driver for QEMU QXL paravirt video.
 autoreconf -f
 
 %files
-%{_libdir}/xorg/modules/drivers/qxl_drv.so
+%{_libdir}/xorg/modules/xlibre-*/drivers/qxl_drv.so
