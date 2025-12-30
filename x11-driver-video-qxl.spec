@@ -18,6 +18,9 @@ BuildSystem:	autotools
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	slibtool
+# for definitions of AC_DISABLE_STATIC and friends.
+# We need to get those into slibtool
+BuildRequires:	libtool-base
 BuildRequires:	pkgconfig(fontsproto)
 BuildRequires:	pkgconfig(pciaccess) >= 0.10
 BuildRequires:	pkgconfig(randrproto)
