@@ -15,6 +15,9 @@ Source0:	https://github.com/X11Libre/xf86-video-qxl/archive/refs/tags/xlibre-xf8
 #Patch1:		0001-worst-hack-of-all-time-to-qxl-driver.patch
 
 BuildSystem:	autotools
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	slibtool
 BuildRequires:	pkgconfig(fontsproto)
 BuildRequires:	pkgconfig(pciaccess) >= 0.10
 BuildRequires:	pkgconfig(randrproto)
