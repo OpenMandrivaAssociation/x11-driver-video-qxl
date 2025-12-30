@@ -32,5 +32,8 @@ Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 %description
 X11 driver for QEMU QXL paravirt video.
 
+%prep -a
+autoreconf -f
+
 %files
 %{_libdir}/xorg/modules/drivers/qxl_drv.so
