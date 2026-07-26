@@ -3,7 +3,7 @@
 Summary:	X11 driver for QEMU QXL paravirt video
 Name:		x11-driver-video-qxl
 Version:	25.0.0
-Release:	1
+Release:	2
 Group:		System/X11
 License:	MIT
 Url:		https://xorg.freedesktop.org
